@@ -19,7 +19,7 @@
   --fs-large: 1.6rem;
   --fs-xlarge: 2.4rem;
 
-  --element-size: 30rem;
+  --element-size: 25rem;
 }
 
 *,
@@ -127,6 +127,13 @@ input {
   font-family: inherit;
   padding: 0.5rem 1rem 0.75rem;
   width: 100%;
+}
+
+button {
+  margin-top: 1rem;
+  font-size: var(--fs-large);
+  border: 1px solid var(--clr-light);
+  padding: 0.5rem;
 }
 
 footer {
