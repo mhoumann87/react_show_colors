@@ -1,12 +1,18 @@
+//import { useState } from 'react';
+
 import Header from './components/Header';
-import Content from './components/Content';
 import Footer from './components/Footer';
+import Square from './components/Square.jsx';
+import Input from './components/Input.jsx';
 
 function App() {
   return (
     <>
       <Header />
-      <Content />
+      <main className='container'>
+        <Square colorValue={''} />
+        <Input />
+      </main>
       <Footer />
     </>
   );
