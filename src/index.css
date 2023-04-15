@@ -72,6 +72,15 @@ body {
   box-shadow: 4px 4px 22px -5px rgba(77, 69, 69, 0.71);
 }
 
+a {
+  color: var(--clr-link);
+  transition: color 450ms ease;
+}
+
+a:where(:hover, :focus-visible) {
+  color: var(--clr-dark);
+}
+
 header {
   background-color: var(--clr-dark);
   color: var(--clr-light);
@@ -85,8 +94,35 @@ header h1 {
   margin: 0;
 }
 
+main {
+  /* height: 100%; */
+  display: grid;
+  place-content: center;
+}
+
+.color-box {
+  width: 30rem;
+  height: 30rem;
+  border: 2px solid var(--clr-medium);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+}
+
+input {
+  margin-top: var(--fs-large);
+  font-size: var(--fs-large);
+  border: none;
+  border-bottom: 3px solid var(--clr-medium);
+  background-color: var(--clr-light);
+  font-family: inherit;
+  padding: 0.5rem 1rem 0.75rem;
+}
+
 footer {
-  border-top: 2px solid var(--clr-dark);
+  border-top: 2px solid var(--clr-medium);
   padding-block-end: 1rem;
 }
 
