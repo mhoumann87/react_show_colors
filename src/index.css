@@ -18,6 +18,8 @@
   --fs-regular: 1.2rem;
   --fs-large: 1.6rem;
   --fs-xlarge: 2.4rem;
+
+  --element-size: 30rem;
 }
 
 *,
@@ -101,14 +103,19 @@ main {
 }
 
 .color-box {
-  width: 30rem;
-  height: 30rem;
+  width: var(--element-size);
+  height: var(--element-size);
   border: 2px solid var(--clr-medium);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: var(--fs-large);
   font-weight: var(--fw-bold);
+}
+
+form {
+  width: var(--element-size);
 }
 
 input {
@@ -119,6 +126,7 @@ input {
   background-color: var(--clr-light);
   font-family: inherit;
   padding: 0.5rem 1rem 0.75rem;
+  width: 100%;
 }
 
 footer {
